@@ -99,16 +99,6 @@ export default function Home() {
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyUp={handleKeypress}
                 />
-                <div className="border-l border-gray-300 flex justify-center items-center  rounded-br-md group hover:bg-green-300 transition-all">
-                  <button
-                    className="group-hover:text-white px-3 h-full"
-                    onClick={() => {
-                      sendMessage();
-                    }}
-                  >
-                    Send
-                  </button>
-                </div>
               </div>
             </div>
           </>
