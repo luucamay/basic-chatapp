@@ -52,7 +52,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-center p-4 mx-auto min-h-screen justify-center bg-purple-500">
+    <div className="flex items-center p-4 mx-auto min-h-screen justify-center bg-black">
       <main className="gap-4 flex flex-col items-center justify-center w-full h-full">
         {!chosenUsername ? (
           <>
@@ -77,15 +77,12 @@ export default function Home() {
           </>
         ) : (
           <>
-            <p className="font-bold text-white text-xl">
-              Your username: {username}
-            </p>
-            <div className="flex flex-col justify-end bg-white h-[20rem] min-w-[33%] rounded-md shadow-md ">
+            <div className="flex flex-col justify-end bg-black text-green-400 h-[40rem] min-w-[90%] shadow-md ">
               <div className="h-full last:border-b-0 overflow-y-scroll">
                 {messages.map((msg, i) => {
                   return (
                     <div
-                      className="w-full py-1 px-2 border-b border-gray-200"
+                      className="w-full py-1 px-2"
                       key={i}
                     >
                       {msg.author} : {msg.message}
@@ -93,16 +90,16 @@ export default function Home() {
                   );
                 })}
               </div>
-              <div className="border-t border-gray-300 w-full flex rounded-bl-md">
+              <div className="w-full flex">
                 <input
                   type="text"
                   placeholder="New message..."
                   value={message}
-                  className="outline-none py-2 px-2 rounded-bl-md flex-1"
+                  className="outline-none py-2 px-2 rounded-bl-md flex-1 bg-black text-green-400"
                   onChange={(e) => setMessage(e.target.value)}
                   onKeyUp={handleKeypress}
                 />
-                <div className="border-l border-gray-300 flex justify-center items-center  rounded-br-md group hover:bg-purple-500 transition-all">
+                <div className="border-l border-gray-300 flex justify-center items-center  rounded-br-md group hover:bg-green-300 transition-all">
                   <button
                     className="group-hover:text-white px-3 h-full"
                     onClick={() => {

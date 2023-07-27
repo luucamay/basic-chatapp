@@ -1,3 +1,3 @@
-### Github repo for medium article series
+# retro Chat for acero
 
-[Part 1:](https://medium.com/p/976555ecba)
+A web application to have a simple retro chat
