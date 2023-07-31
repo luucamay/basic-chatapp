@@ -18,11 +18,11 @@ export default function Home() {
     socketInitializer();
   }, []);
 
-  const socketInitializer = async () => {
+  const socketInitializer = () => {
     // We just call it because we don't need anything else out of it
-    await fetch("/api/socket");
+    //await fetch("/api/socket");
 
-    socket = io();
+    socket = io('https://acero.onrender.com');
 
     socket.on("newIncomingMessage", (msg) => {
       setMessages((currentMsg) => [
