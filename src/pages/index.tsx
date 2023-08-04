@@ -57,11 +57,11 @@ export default function Home() {
         {!chosenUsername ? (
           <>
             <h3 className="font-bold text-white text-xl">
-              How people should call you?
+              Escoge un nombre
             </h3>
             <input
               type="text"
-              placeholder="Identity..."
+              placeholder="Identidad..."
               value={username}
               className="p-3 rounded-md outline-none"
               onChange={(e) => setUsername(e.target.value)}
