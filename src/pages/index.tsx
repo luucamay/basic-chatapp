@@ -72,7 +72,7 @@ export default function Home() {
               }}
               className="bg-white rounded-md px-4 py-2 text-xl"
             >
-              Go!
+              Ir!
             </button>
           </>
         ) : (
